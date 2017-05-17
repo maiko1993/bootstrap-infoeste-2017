@@ -1,0 +1,219 @@
+body {
+  background-color: #ECF0F1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+/** 
+ ** nav
+ **
+ **/
+
+.navbar-nav > li > a {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background-color: transparent;
+  color: #233142;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+}
+
+
+/** 
+ ** sections
+ **
+ **/
+
+.page {
+  position: relative;
+  padding: 40px 0 80px;
+}
+
+.page p {
+  font-size: 22px;
+}
+
+.page-heading {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  color: #FFF;
+}
+
+.page-heading:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 5px;
+  background-color: #ECF0F1;
+}
+
+
+/** 
+ ** featurette
+ **
+ **/
+
+.featurette {
+  padding-bottom: 100px;
+  background: #FFF url('../img/water.png') bottom right no-repeat;
+}
+
+.featurette .page-heading {
+  color: #E74C3C;
+}
+
+/** 
+ ** contact
+ **
+ **/
+
+.contact {
+  padding-bottom:   0;
+  background: url('../img/world-map.png') top center #E74C3C no-repeat;
+  background-size: cover;
+}
+
+.contact .form-control {
+  min-height: 45px;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.contact .form-control::placeholder {
+  color: rgba(255, 255, 255, .65);
+}
+
+.contact .btn {
+  padding: 10px 20px;
+  border-radius: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: .065;
+  font-weight: 900;
+  font-size: 18px;
+  color: #FFF;
+}
+
+.contact .btn .glyphicon {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.contact .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.contact .contact-bar {
+  padding: 40px 0 30px;
+  margin-top: 20px;
+  background-color: #ECF0F1;
+}
+
+.address {
+  font-size: 16px;
+  color:  #FFF;
+}
+
+.address .address-group {
+  margin-bottom:  25px;
+}
+
+.address .address-heading {
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  color: #FFF;
+}
+
+.address .address-heading .glyphicon {
+  margin-right: 5px;
+  font-size: 18px;
+  color: rgba(255,255,255,.8);
+}
+
+/** 
+ ** product
+ **
+ **/
+
+.product {
+  background-color: #233142;
+}
+
+.product-item {
+  position: relative;
+  display: block;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.product-item:hover .product-hover {
+  display: block;
+}
+
+.product-item img {
+  width: 100%;
+  box-shadow: 0 20px 0 rgba(0, 0, 0, 0.2), 0 10px 0 rgba(255, 255, 255, 0.2);
+}
+
+.product-hover {
+  display: none;
+  padding: 35% 5% 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.product-hover span {
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 38px;
+  font-weight: 900;
+  color: #FFF;
+}
+
+/** 
+ ** beers
+ **
+ **/
+
+.beers {
+  padding: 40px 0;
+}
+
+.beers .page-heading {
+  margin: 0;
+}
